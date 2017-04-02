@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定位和居中问题</title>
+</head>
+<style type="text/css">
+.content{
+	position: absolute;
+	background-color: #ccc;
+	height: 200px;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;  /*height的一半*/
+	margin-left: -200px; /*width的一半*/
+}
+.leftquarter{
+	background-color: #fc0;
+	height: 50px;
+	width: 50px;
+	-moz-border-radius:0 0 50px 0;/*支持苹果、谷歌浏览器，用的webkit内核*/
+	-webkit-border-radius:0 0 50px 0;  /*支持火狐浏览器*/
+	border-radius: 0 0 50px 0;  /*圆的右下角，半径为50px */
+
+}
+.rightquarter{
+	background-color: #fc0;
+	height: 50px;
+	width: 50px;
+	-moz-border-radius:50px 0 0 0;
+	-webkit-border-radius:50px 0 0 0;
+	border-radius: 50px 0 0 0;   /*按照左上角、右上角、右下角、左上角的顺序，这是画的圆的左上角*/
+	position: relative;
+	bottom: -100px;
+	right: -350px;
+	
+}
+
+</style>
+<body>
+<div class="content">
+
+	<div class="leftquarter"></div>
+    <div class="rightquarter"></div>
+
+</div>
+</body>
+</html>
