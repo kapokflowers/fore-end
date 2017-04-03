@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ife的第五次任务</title>
+	<style type="text/css">
+	*{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#container{
+		width: 1400px;
+		height: 100%;
+		background-color: #edd1d8;
+	
+	}
+	#box1{
+		margin-left: 0px;
+		margin-top: 0px;
+		background-color: #b0a4e3;
+		width: 1400px;
+		height: 70px;
+	}
+	
+	#box1-2{
+		position: absolute;  /*绝对定位*/
+		left: 850px;   /*设置距左边距离*/
+		top: 20px;     /*设置距顶部距离*/
+	}
+	#box2,#box3,#box5{
+    	width: 800px;
+    	height: 700px;
+    	border-top: solid bold grey;
+    	border-left: solid bold grey;
+    	border-right: 2px solid  grey;
+    	border-bottom: 2px solid grey;                                 
+    	background-color: white;
+    	margin: auto; /*盒子水平垂直居中*/
+    	margin-top: 20px;
+    	margin-left: 25px;
+    }
+    #box4{
+    	width: 800px;
+    	height: 350px;
+    	border-top: solid bold grey;
+    	border-left: solid bold grey;
+    	border-right: 2px solid  grey;
+    	border-bottom: 2px solid grey;                                 
+    	background-color: white;
+    	margin: auto; /*盒子水平垂直居中*/
+    	margin-top: 20px;
+    	margin-left: 25px;
+    }
+     #box6{
+    	width: 500px;
+    	height: 700px;
+    	border-top: solid bold grey;
+    	border-left: solid bold grey;
+    	border-right: 2px solid  grey;
+    	border-bottom: 2px solid grey;                                 
+    	background-color: white;
+    	margin: auto; /*盒子水平垂直居中*/
+    	margin-top: 20px;
+    	margin-left: 10px;
+    	float: right;
+    }
+	#menu li{
+		float: left;  /*向左漂移，竖排变成横排*/
+		margin-left: 20px;   /*每个li左右间距20像素*/
+		margin-right: 20px;
+
+	}
+    #menu li a{
+    	text-decoration: none;  /*去掉链接的下划线*/
+    	color: white;
+    }
+                       
+    #lie{
+    	list-style-type: none;/*去掉li前面的圆点*/
+    }
+    #lie li{
+    	margin-top: 10px;
+    }
+   
+    #table-a{
+    	width: 130px;
+    	height: 130px;
+    	border: 1px solid grey;
+    	margin-top: 10px;
+    	
+    	
+    }
+
+	#table-a td{
+		text-align: center;
+
+
+	}
+	#table-b{
+		margin-left: 50px;
+	}
+	#table-b tr,td{
+		height: 20px;
+		width: 400px;
+		text-align: left;
+
+	}
+	#box6 p{
+		margin-left: 50px;
+	}
+	#box6-1{
+		border-style:1px solid;
+		border-radius: 11px 11px 11px 11px;  /*画圆角边框*/
+		background-color: #4b5cc4;
+		width: 300px;
+		height:50px;
+		margin:auto;
+		margin-top: 40px;
+		text-align: center;
+	    padding-top: 20px;
+	}
+	#box7{
+		margin-left: 0px;
+		margin-top: 20px;
+		background-color: #b0a4e3;
+		width: 1400px;
+		height: 50px;
+		text-align: center;
+		padding-top: 20px;
+
+	}
+	</style>
+</head>
+<body>
+<div id="container">
+<div id="box1">
+<div id="box1-1"><img src="img/02.jpg" width="100" height="70"></div>
+<div id="box1-2">
+	<ul id="menu">
+	<li><a href="#">导航链接一</a></li>
+	<li><a href="#">导航链接二</a></li>
+	<li><a href="#">导航链接三</a></li>
+	<li><a href="#">导航链接四</a></li>
+	</ul>
+</div>	
+</div>
+
+<div id="box6">
+	<h style="font-size: 20px;font-family:微软雅黑;font-weight: bold;">这里以后是一个侧栏，这是侧栏的标题</h>
+	<p>请输入邮箱地址&nbsp;&nbsp;<input type="text" name="这是一个文本输入框"></p>
+	<p>邮箱地址请按要求格式输入</p>
+	<p>请输入密码&nbsp;&nbsp;<input type="password" name="这是一个密码框" value="*********"></p>
+	<p>请重复输入密码&nbsp;&nbsp;<input type="password" name="密码框" value="********"></p>
+	<p>密码请输入6-12位的英文数字</p>
+	<p>性别&nbsp;<input type="radio" name="sex" value="男" checked>男
+        <input type="radio" name="sex" value="女">女</p>
+    <p>城市&nbsp;<select name="city">
+        <option value="北京" check>北京</option>
+        <option value="深圳">深圳</option>
+        </select></p>
+    <p>爱好&nbsp;<input type="checkbox" name="like" value="运动">运动
+          <input type="checkbox" name="like" value="艺术">艺术
+           <input type="checkbox" name="like" value="科学">科学</p>
+    <p>个人描述&nbsp;<textarea name="descripet" cols="50" rows="4" >这是一个多行输入框，输入您的描述</textarea></p>
+    <div id="box6-1" >
+    	确认提交
+    </div>
+</div>
+
+<div id="box2">
+	<h1 style="font-size:20px;font-weight: bold;font-family: 黑体">三毛的作品集</h1>
+	<h2 style="font-size: 20px;font-family: 宋体">雨季不再来</h2>
+	<h3 style="font-size: 15px;font-family: 宋体">三毛&nbsp;2011年11月10日</h3>
+	<p style="text-indent: 2em;">我说，你是人间的四月天；笑声点亮了四面风；轻灵再春的光艳中交舞着变。你是四月早上里的云烟，黄昏吹着风的软，<br />星子再无意中的闪，细雨点洒在花前。那清，那娉婷，你是，鲜艳百花的冠冕你戴着，<strong>你</strong>是天真庄严，你是夜夜的月圆。雪化后那片鹅黄，<a href="http://baidu.com">你像新鲜初放芽的绿，</a>你是柔嫩喜悦，水光浮动着你梦期待中白莲。你是一树一树的花开，是燕在梁间呢喃⑷，——你是爱，是暖，是希望，你是人间的四月天！</p>
+	<img src="img/01.jpg" height="300px" width="300px">
+	<p style="text-indent: 2em;">我说，你是人间的四月天；笑声点亮了四面风；轻灵再春的光艳中交舞着变。你是四月早上里的云烟，黄昏吹着风的软，<br />星子再无意中的闪，细雨点洒在花前。那清，那娉婷，你是，鲜艳百花的冠冕你戴着，你是天真庄严，你是夜夜的月圆。雪化后那片<strong>鹅</strong>黄，你像新鲜初放芽的绿，你是柔嫩喜悦，水光浮动着你梦期待中白莲。<a href="http：baidu.com" target="_blank">你是一树一树的花开，</a>是燕在梁间呢喃⑷，——你是爱，是暖，是希望，你是人间的四月天！</p>
+</div>
+
+
+
+
+<div id="box3">
+	<h1 style="font-size:20px;font-weight: bold;font-family: 黑体">林徽因的作品集</h1>
+	<h2 style="font-size: 20px;font-family: 宋体">你是人间四月天</h2>
+	<h3 style="font-size: 15px;font-family: 宋体">林徽因&nbsp;1934年4月5日</h3>
+	<p style="text-indent: 2em;">这已不知是第几日了，我总在落着雨的早晨醒来，窗外照例是一片灰镑镑的天空，没有黎明时的曙光，没有风，没有鸟叫。<br>后院的小树都很<strong>寥</strong>寂的静立在雨中，无论从那一个窗口望出去，<a href="http://baidu.com">总有雨水在冲流着</a>。除了雨水之外，听不见其他的声音，在这时分里，一切全是静止的。我胡乱的穿着衣服，想到今日的考试，想到心中挂念着的培，心情就又无端的沉落下去，而对这样的季候也无心再去咒诅它了。
+
+</p>
+<img src="img/01.jpg" height="300px" width="300px">
+<ul id="lie">
+	<li>云在青山月在天</li>
+	<li>明日右天涯</li>
+	<li>安东尼.我的安东尼</li>
+</ul>
+</div>
+
+<div id="box4">
+	<h4 style="font-size: 20px;font-family: 微软雅黑;">图片</h4>
+	<table>
+	<tr>
+	  <td>
+		<table id="table-a"> 
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+	</tr>
+		<tr>
+	  <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+       <td>
+		<table id="table-a">
+	       <tr>
+		       <td>好看的图片</td>
+	       </tr>
+	         <tr> 
+	             <td>
+	               <img src="img/01.jpg" width="100"  height="100">
+	             </td>
+	         </tr>
+         </table>
+       </td>
+	</tr>
+   </table>
+
+
+</div>
+
+<div id="box5">
+	<h1 style="font-size:20px;font-weight: bold;font-family: 黑体">徐志摩的作品集</h1>
+	<h2 style="font-size: 20px;font-family: 宋体">再别康桥</h2>
+	<h3 style="font-size: 15px;font-family: 宋体">徐志摩&nbsp;1934年4月5日</h3>
+	<ol>
+	<li>最后的那一天</li>
+	<li>云游</li>
+	<li>残破</li>
+	</ol>
+
+<table border="1" id="table-b">
+	<tr style="background-color: black;color: white;"> 
+		<td>表头</td>
+		<td>表头</td>
+		<td>表头</td>
+	</tr>
+	<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td style="color: blue">操作</td>
+	</tr>
+	<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td style="color: blue">操作</td>
+	</tr>
+	<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td style="color: blue">操作</td>
+	</tr>s
+	<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td style="color: blue">操作</td>
+	</tr>
+	<tr style="background-color: grey;">
+		<td>总计</td>
+		<td colspan="2">100</td>
+	</tr>
+</table>
+</div>
+
+
+<div id="box7">Copyright &copy;凌天真</div>
+</div>
+
+</body>
+</html>
