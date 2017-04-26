@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,li{
+	list-style: none;
+}
+
+
+/*清除浮动
+.clearfix:after {
+	content: '';
+	height: 0;
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+
+	border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  	border-bottom: 4px solid black;
+  	width: 0px;
+  	height: 0px;*/
