@@ -1,0 +1,62 @@
+html{
+    font-family: sans-serif;/*无衬体字体，多数系统里都存在的字体，能保证调用*/
+}
+body{
+    margin: 0;/*把body默认的外边距去掉*/
+}
+*{
+   box-sizing: border-box;
+}
+.info-box {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  /*从无序列表中移除默认的padding-left和margin-top值*/
+  .info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .info-box li{
+    list-style-type: none;
+    float: left;
+    width: 150px;
+  }
+  .info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 3;
+    width: 100%;/*希望一个block-level的元素填满整个父容器的所有空白*/
+    background-color: darkgray;
+    color: cornsilk;
+    text-align: center;
+  }
+  /*设置标签的 :focus 和 :hover 状态，让他们在获得焦点/鼠标悬浮的时候看起来不同*/
+  .info-box li a:focus,.info-box li a:hover{
+      background-color: cadetblue;
+      color:red;
+
+  }
+  .info-box li a.active{
+    background-color: cadetblue;
+    color:red;
+  }
+  .info-box .panels {
+    height: 350px;/*设置一个固定的高度，确保面板包含在info-box里面*/
+    position: relative;/*设置 <div> 为定位上下文，这样能相对自身放置定位子元素，而不是相对<html>元素*/
+    clear: both;/*避免影响布局的剩余部分*/
+  }
+    /*都位于<div>容器的左上角,就像使面板互相位于顶部*/
+  .info-box article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(160, 95, 138);
+  }
+  
+  .info-box .active-panel {
+    z-index: 1;
+  }
