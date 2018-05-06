@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+        <h3>污染城市列表</h3>
+        <ul id="aqi-list">
+            
+        </ul>
+        <script type="text/javascript">
+            var aqiData = [
+                ["北京", 90],
+                ["上海", 50],
+                ["福州", 10],
+                ["广州", 50],
+                ["成都", 90],
+                ["西安", 100]
+            ];
+            const ul = document.getElementById("aqi-list");
+            (function(){
+                
+                //使用filter方法获取空气质量指数大于60的城市
+                const filteredCity = aqiData.filter(city => {return city[1]>60})
+                //使用sort方法将空气质量指数大于60的几个城市进行降序排序
+                const sortedCity = filteredCity.sort((a,b) => {return b[1]-a[1]})
+                //使用map方法对排好序的数组添加相应格式和相关文字，名次顺序可以使用数组的indexOf方法获得；
+                const  mapedCity = filteredCity.map(city => {return `<li>第${filteredCity.indexOf(city)+1}名:${city[0]},${city[1]}</li>`})
+                //使用forEach方法将数组元素遍历添加到<ul>的innerHTML中
+                mapedCity.forEach(city => ul.innerHTML+=city)
+            })();
+        </script>
+</body>
+</html>

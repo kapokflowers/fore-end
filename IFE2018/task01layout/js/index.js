@@ -25,6 +25,7 @@ function setTabHandler(tab,tabPos){
         }
         /*setAttribute() 方法添加指定的属性，并为其赋指定的值。*/
         tab.setAttribute("class","active");
+        
         for(i = 0; i < panels.length;i++){
             if(panels[i].getAttribute("class")){
                 panels[i].removeAttribute("class");
